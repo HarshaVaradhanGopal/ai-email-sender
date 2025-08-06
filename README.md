@@ -1,12 +1,16 @@
-# React + Vite
+# AI Email Sender App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-stack application that:
+- Accepts a prompt and recipient email
+- Uses AI (mocked or OpenAI API) to generate an email (I have also added a route to returna  fake mail since i add to remove the api key)
+- Lets user edit the result
+- Sends the email using Nodemailer
 
-Currently, two official plugins are available:
+## Tech Stack
+- Frontend: React + Tailwind
+- Backend: Node.js + Express
+- Email: Nodemailer (Gmail SMTP)
+- AI: OpenAI API (mocked for free tier)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Demo
+Prompt → Generate → Edit → Send 
